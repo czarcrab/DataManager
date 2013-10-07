@@ -1,0 +1,49 @@
+{
+  "name": "data_manager",
+  "preferGlobal": false,
+  "version": "0.0.1",
+  "author": "Ajay Malhotra<ajay@malhotra.ca>",
+  "description": "A tool to view normalization state of your database and help modify tables / columns to attain desired Normal Form",
+  "contributors": [
+    {
+      "name": "Ajay Malhotra",
+      "email": "ajay@malhotra.ca"
+    }
+  ],
+  "bin": {
+    "http-server": "./bin/http-server"
+  },
+  "scripts": {
+    "start": "node ./bin/http-server",
+    "test": "cake test",
+    "predeploy": "echo This will be run before deploying the app",
+    "postdeploy": "echo This will be run after deploying the app"
+  },
+  "main": "./lib/http-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/czarcrab/data_manager.git"
+  },
+  "keywords": [
+    "3 NF",
+    "Normal Form",
+    "Normalization",
+    "Database"
+  ],
+  "dependencies" : {
+    "express": "3.x",
+    "jade": "*",
+    "docco": "*",
+    "coffee-script": "*"
+  },
+  "analyze": false,
+  "devDependencies": {
+    "jasmine-node":  "*",
+    "chai": "~1.0.3",
+    "mocha": "~1.1.0"
+  },
+  "license": "GPLv2",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
